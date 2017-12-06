@@ -30,7 +30,7 @@
 
 恐らく今後の主な活動分野は、Extendedの本体や外部ツールの開発になると思います。まあまずは、冬のシムトラ学会での発表を予定していますので、参加される方々はどうかよろしくお願いします。
 
-なお、Simutransの他にも色々やってます。興味があれば`Twitter <https://twitter.com/suitougreentea>`_を覗いてみてください。
+なお、Simutransの他にも色々やってます。興味があれば `Twitter <https://twitter.com/suitougreentea>`_ を覗いてみてください。
 
 さて、ここからが本題です。
 
@@ -46,7 +46,7 @@ Extendedを始めてから、ダイヤの作成はExcelで行っていました�
 
 いくつか単純なダイヤを組んで、Excelによる製作工程も大分慣れてきたとはいえ、どうしても面倒ですし、やはりダイヤグラムを視覚的に確認しながら試行錯誤したくなります。先に書いたように、一般的なダイヤ作成ツールでは何かとExtendedの仕様にマッチしません。
 
-そこで、Extendedのダイヤを組むことだけに特化したツールを作ろうと思い立ったのです。それを現在`SimuDia <https://github.com/suitougreentea/SimuDia>`_として公開しています。
+そこで、Extendedのダイヤを組むことだけに特化したツールを作ろうと思い立ったのです。それを現在 `SimuDia <https://github.com/suitougreentea/SimuDia>`_ として公開しています。
 
 比較的簡単な構文のテキストファイルを読み込むと、ダイヤグラムが表示されます。上書き保存されると自動で更新されるようになっているので、こんな感じで横に並べて作業すると良いと思います。
 
@@ -59,12 +59,12 @@ Extendedを始めてから、ダイヤの作成はExcelで行っていました�
 
 制作したダイヤがグラフィカルに確認できるようになりました。調整作業が格段と楽になったとはいえ、結局ダイヤ制作で一番面倒なのは各駅間の時間計測です。ツールを作る前から、この作業は自動化できたらなあと常々思っていました。当時ちょうど、街が成長しないバグの原因を突き止めるために（報告の結果、現在は修正されています）、開発環境をセットアップしていたため、良い機会だと思い本体改造にも着手してみることにしました。
 
-大規模なソフトでは、やはりどういう設計になっているのかを学ぶのが大変です。まして不慣れなC++です。しかも何かとレガシーです。色々と試行錯誤しながら、なんとか形にした第1作の動作動画が`コレ <https://twitter.com/suitougreentea/status/931473543933526016>`_。
+大規模なソフトでは、やはりどういう設計になっているのかを学ぶのが大変です。まして不慣れなC++です。しかも何かとレガシーです。色々と試行錯誤しながら、なんとか形にした第1作の動作動画が `コレ <https://twitter.com/suitougreentea/status/931473543933526016>`_ 。
 動画ではスタート/ストップのボタンで計測していますが、現在は過去3回分の時間データを常に蓄積し、それを表示するという実装に変更しました。更に、路線ごとだけではなく、車両ごとの履歴を見れるようになりました。現状はこんな感じ。
 
 .. image:: line-time-measurement-demo.png
 
-現在、`line-time-measurementブランチ <https://github.com/suitougreentea/simutrans-extended/tree/line-time-measurement>`_で作業を進めており、フォーラムにもこの機能に関するスレッドを作りました。本体に組み込んでもらうにはまだまだ改良が必要そうですが、人柱さんはリポジトリをクローンしてコンパイルさせてみると良いと思います。現時点で十分便利だと自負しています。
+現在、 `line-time-measurementブランチ <https://github.com/suitougreentea/simutrans-extended/tree/line-time-measurement>`_ で作業を進めており、フォーラムにもこの機能に関するスレッドを作りました。本体に組み込んでもらうにはまだまだ改良が必要そうですが、人柱さんはリポジトリをクローンしてコンパイルさせてみると良いと思います。現時点で十分便利だと自負しています。
 
 組み合わせて爆速
 --------
@@ -414,9 +414,9 @@ SimuDia内で、右上にある種別をクリックすると、画像のよう�
 試してみたい！
 -------
 
-SimuDiaのダウンロードは`ここ <https://github.com/suitougreentea/SimuDia/releases>`_から。Windows版バイナリが入手できます。最新版はこの記事の各過程の中間ファイル付き。
+SimuDiaのダウンロードは `ここ <https://github.com/suitougreentea/SimuDia/releases>`_ から。Windows版バイナリが入手できます。最新版はこの記事の各過程の中間ファイル付き。
 
-時間計測パッチは`line-time-measurementブランチ <https://github.com/suitougreentea/simutrans-extended/tree/line-time-measurement>`_から。申し訳ありませんが現在バイナリは公開していないので、自前でコンパイル出来る人に限ります。
+時間計測パッチは `line-time-measurementブランチ <https://github.com/suitougreentea/simutrans-extended/tree/line-time-measurement>`_ から。申し訳ありませんが現在バイナリは公開していないので、自前でコンパイル出来る人に限ります。
 
 これからの予定
 -------
